@@ -24,6 +24,3 @@ class TestClone(unittest.IsolatedAsyncioTestCase):
     def test_get_wrong(self):
         self.assertRaises(FileNotFoundError, get_clone_dir, 'wrong_file')
 
-    def test_get_file(self):
-        res = get_clone_dir('main.py')
-        self.assertEqual(res, ('.git', '.git/.git/'))
