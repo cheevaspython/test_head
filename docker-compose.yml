@@ -1,0 +1,9 @@
+services:
+  test-app: 
+    build:
+      context: .
+    volumes:
+      - .:/test
+    command: >
+      sh -c 'python main.py'
+

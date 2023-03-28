@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "head-hh"
+version = "0.1.0"
+description = ""
+authors = ["Vas <vas@va.va>"]
+readme = "README.md"
+packages = [{include = "head_hh"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gitpython = "^3.1.31"
+aiofiles = "^23.1.0"
+wemake-python-styleguide = "^0.17.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.4.0"]
+build-backend = "poetry.core.masonry.api"
