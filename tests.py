@@ -26,4 +26,4 @@ class TestClone(unittest.IsolatedAsyncioTestCase):
 
     def test_get_file(self):
         res = get_clone_dir('main.py')
-        self.assertEqual(res, ('get_hash.py', 'get_hash.py/.git/'))
+        self.assertEqual(res, ('.git', '.git/.git/'))

@@ -14,6 +14,12 @@ PRE_DIR_FILES = 'pre_dir_files'
 HEAD = 'HEAD'
 CLONE_REPO = 'https://gitea.radium.group/radium/project-configuration.git'
 
+cmd_poerty_shell = 'poetry shell'
+os.system(cmd_poerty_shell)
+
+cmd_create_run_tests = 'python -m unittest tests.py'
+os.system(cmd_create_run_tests)
+
 cmd_create_pre_clone = 'ls -a > pre_dir_files'
 os.system(cmd_create_pre_clone)
 
